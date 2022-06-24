@@ -10,7 +10,8 @@
 
 .header {
   height: 93px;
-  margin-top: 36px;
+  padding-top: 36px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .header .container {
@@ -18,12 +19,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+.header a {
+  z-index: 1;
 }
 
 .header__logo {
   display: block;
   height: 65px;
   margin-left: 7px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .header__nav {
@@ -96,4 +104,110 @@
 .header__reg:hover .hidden {
   background-color: rgba(0, 0, 0, 0);
   display: block;
+}
+
+.promo .container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  min-height: 775px;
+}
+
+.promo_gradient {
+  width: 1408px;
+  height: 623px;
+  background: radial-gradient(ellipse farthest-side at center, rgba(255, 165, 106, 0.15) 80%, rgba(255, 165, 106, 0));
+  filter: blur(62px);
+}
+
+.promo__gradient {
+  position: absolute;
+  top: 79px;
+  left: -36px;
+  width: 1350px;
+  height: 570px;
+  border-radius: 100%;
+  background: rgba(211, 127, 72, 0.11);
+  filter: blur(50px);
+}
+
+.promo__item {
+  width: 553px;
+  height: 458px;
+  z-index: 1;
+  background-color: rgba(255, 165, 106, 0);
+  margin-top: 92px;
+}
+
+.promo__title {
+  padding: 0 10px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 74px;
+  color: #FFFFFF;
+  background-color: rgba(255, 165, 106, 0);
+}
+
+.promo__title span {
+  color: #F9B985;
+  background-color: rgba(255, 165, 106, 0);
+}
+
+.promo__subtitle {
+  margin: 51px 0 41px 0;
+  padding: 0 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  background-color: rgba(255, 165, 106, 0);
+}
+
+.promo__img {
+  margin-top: 130px;
+  width: 642px;
+  height: 460px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 197px;
+  height: 74px;
+  border: 1.5px solid #E28C54;
+  border-radius: 12px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  color: #E28C54;
+  background-color: rgba(255, 165, 106, 0);
+}
+
+.btn:hover {
+  background: linear-gradient(104.85deg, #AF612D -27.27%, #FFA56A 117.63%);
+  color: #fff;
+}
+
+.btn_promo {
+  display: inline-block;
+  margin-right: 58px;
+}
+
+.btn_w170 {
+  display: inline-block;
+  width: 170px;
+}
+
+.gradient {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: -292px;
+  top: -282px;
+  background: radial-gradient(circle closest-side, rgba(255, 165, 106, 0.25), rgba(255, 165, 106, 0));
 }

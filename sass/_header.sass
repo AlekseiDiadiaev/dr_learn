@@ -1,19 +1,26 @@
 .header
     height: 93px
-    margin-top: 36px
+    padding-top: 36px
+    background-color: rgba(0, 0, 0, 0)
     
-    
+      
     .container
         height: 93px
         display: flex
         justify-content: space-between
         align-items: center
-        
-    
+        background-color: rgba(0, 0, 0, 0)
+        position: relative
+
+    a
+        z-index: 1    
     &__logo
         display: block
         height: 65px
         margin-left: 7px
+        background-color: rgba(0, 0, 0, 0)
+        
+        
     &__nav
         display: flex
         justify-content: space-between
@@ -27,7 +34,7 @@
         line-height: 30px
         color: #FFFFFF
         text-decoration: none
-        position: relative
+        position: relative 
         &:hover
             color: #F9B985
             &:after
