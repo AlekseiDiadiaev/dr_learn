@@ -1,4 +1,8 @@
 * {
+  box-sizing: border-box;
+}
+
+body {
   background-color: #32261A;
 }
 
@@ -8,8 +12,44 @@
   margin: 0 auto;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 197px;
+  height: 74px;
+  border: 1.5px solid #E28C54;
+  border-radius: 12px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  color: #E28C54;
+  background-color: rgba(255, 165, 106, 0);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(104.85deg, #AF612D -27.27%, #FFA56A 117.63%);
+  color: #fff;
+}
+
+.btn_promo {
+  display: inline-block;
+  margin-right: 58px;
+}
+
+.btn_w170 {
+  display: inline-block;
+  width: 170px;
+}
+
+.btn__tutorial-card {
+  width: 98px;
+  height: 74px;
+}
+
 .header {
-  height: 93px;
+  height: 129px;
   padding-top: 36px;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -21,6 +61,15 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
   position: relative;
+}
+
+.header .container .gradient {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: -240px;
+  top: -282px;
+  background: radial-gradient(circle closest-side, rgba(255, 165, 106, 0.25), rgba(255, 165, 106, 0));
 }
 
 .header a {
@@ -111,6 +160,7 @@
   display: flex;
   justify-content: flex-start;
   min-height: 775px;
+  background-color: rgba(255, 165, 106, 0);
 }
 
 .promo_gradient {
@@ -173,41 +223,177 @@
   height: 460px;
 }
 
-.btn {
+.benefits {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.benefits .container {
+  position: relative;
+  width: 1200px;
+  height: 214px;
+  background: rgba(198, 116, 62, 0.8);
+  box-shadow: 13px 22px 52px rgba(0, 0, 0, 0.1);
+  border-radius: 31px;
+  padding: 20px 49px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  z-index: 2;
+}
+
+.benefits__item {
+  background-color: rgba(0, 0, 0, 0);
+  width: 199px;
+  height: 174px;
+}
+
+.benefits__item-img {
+  margin: 0 auto;
+  width: 98px;
+  height: 98px;
+  background: #D3C11B;
+  border-radius: 100%;
+  display: flex;
   justify-content: center;
-  width: 197px;
-  height: 74px;
-  border: 1.5px solid #E28C54;
-  border-radius: 12px;
+  align-items: center;
+}
+
+.benefits__item-img img {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.benefits__item-descr {
+  font-family: 'Rubik';
+  font-weight: 300;
+  font-size: 29px;
+  color: #FFF48C;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  margin-top: 25px;
+}
+
+.benefits__gradient {
+  width: 198px;
+  height: 198px;
+  background: rgba(249, 185, 133, 0.3);
+  filter: blur(50px);
+  position: absolute;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.benefits__gradient_left {
+  left: -44px;
+  top: -29px;
+}
+
+.benefits__gradient_right {
+  right: -44px;
+  top: -29px;
+}
+
+.tutorials {
+  height: 950px;
+  padding: 190px 0 100px 0;
+}
+
+.tutorials__title {
+  width: 540px;
+  display: block;
+  margin: 0 auto 0 auto;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 20px;
-  color: #E28C54;
-  background-color: rgba(255, 165, 106, 0);
+  font-size: 51px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
 }
 
-.btn:hover {
-  background: linear-gradient(104.85deg, #AF612D -27.27%, #FFA56A 117.63%);
-  color: #fff;
-}
-
-.btn_promo {
-  display: inline-block;
-  margin-right: 58px;
-}
-
-.btn_w170 {
-  display: inline-block;
-  width: 170px;
-}
-
-.gradient {
-  width: 400px;
-  height: 400px;
+.tutorials__star {
   position: absolute;
-  left: -292px;
-  top: -282px;
-  background: radial-gradient(circle closest-side, rgba(255, 165, 106, 0.25), rgba(255, 165, 106, 0));
+  top: -48px;
+  right: -63px;
+  z-index: -1;
+}
+
+.tutorials__cards-box {
+  margin: 126px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tutorial-card {
+  padding: 30px 15px 15px 15px;
+  width: 390px;
+  min-height: 363px;
+  background: rgba(255, 196, 158, 0.1);
+  border: 1px solid #AF612D;
+  border-radius: 10px;
+  position: relative;
+}
+
+.tutorial-card__percent {
+  padding: 13px;
+  position: absolute;
+  width: 59px;
+  right: 15px;
+  top: -27px;
+  background: #FFF48C;
+  border: 4px solid #32261A;
+  border-radius: 44px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFA56A;
+}
+
+.tutorial-card__img-box {
+  margin: 0 auto;
+  width: 94%;
+  height: 186px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+
+.tutorial-card__img {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.tutorial-card__text {
+  padding-left: 10px;
+  width: 185px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tutorial-card__title {
+  display: block;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 30px;
+  color: #FFFFFF;
+  line-height: 1;
+  margin: 0;
+}
+
+.tutorial-card__price {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  color: #F9B985;
+}
+
+.tutorial-card__descr {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
