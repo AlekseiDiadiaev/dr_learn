@@ -1,6 +1,5 @@
 @media (max-width: 1249px) 
     .header__nav
-        display: flex
         justify-content: space-between
         align-items: flex-start
         gap: 25px
@@ -31,7 +30,10 @@
     .header
         &__nav-link
             font-size: 16px
-            pointer-events: none;
+            &:hover
+                color: #FFFFFF
+                &:after
+                    display: none
             
 
         &__logo
@@ -99,6 +101,28 @@
         font-size: 40px        
 @media (max-width: 767px) 
     .header
+        &__nav_main
+            display: none
+        
+        &__reg
+            justify-content: center
+            width: 130px
+            border: 1.4px solid rgba(249, 185, 133, 0.23)
+            font-size: 20px
+            line-height: 36px
+            color: #F9B985
+            background: rgba(0, 0, 0, 0)
+            .hidden
+                    display: none
+            &:hover
+                border: 1.4px solid rgba(249, 185, 133, 0.23)
+                color: #F9B985
+                background: rgba(0, 0, 0, 0)
+                .hidden
+                    display: none
+            
+    .btn__menu
+        display: flex;
 /* @media (max-width: 575px)  */
 
 /* @media (max-width: 424px)  */
