@@ -500,6 +500,9 @@ body {
   .promo .container {
     min-height: 600px;
   }
+  .promo__gradient {
+    width: 90%;
+  }
   .promo__item {
     width: 450px;
   }
@@ -628,6 +631,7 @@ body {
   .header__reg {
     justify-content: center;
     width: 130px;
+    height: 50px;
     border: 1.4px solid rgba(249, 185, 133, 0.23);
     font-size: 20px;
     line-height: 36px;
@@ -648,7 +652,196 @@ body {
   .btn__menu {
     display: flex;
   }
+  .btn {
+    height: 50px;
+    font-size: 17px;
+  }
+  .btn_promo {
+    width: 150px;
+    margin-right: 30px;
+  }
+  .btn_w170 {
+    width: 130px;
+    margin-top: 10px;
+  }
+  .promo .container {
+    min-height: 400px;
+  }
+  .promo__gradient {
+    width: 80%;
+    left: 10%;
+    height: 70%;
+  }
+  .promo__item {
+    width: 90%;
+    margin: 50px auto 0 auto;
+  }
+  .promo__title {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .promo__subtitle {
+    display: block;
+    width: 50%;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .promo__img {
+    width: 230px;
+    height: 200px;
+    margin-top: 0px;
+    position: absolute;
+    top: 110px;
+    right: 16px;
+    overflow: hidden;
+  }
+  .promo__img img {
+    width: 260px;
+  }
+  .benefits__gradient_left {
+    left: -30px;
+  }
+  .benefits__gradient_right {
+    right: 0px;
+  }
+  .tutorials__title {
+    font-size: 38px;
+    width: 400px;
+    text-align: center;
+  }
+  .tutorials__star {
+    top: -37px;
+    right: -50px;
+    width: 92px;
+  }
 }
 
-/* @media (max-width: 575px)  */
-/* @media (max-width: 424px)  */
+@media (max-width: 575px) {
+  .promo__img {
+    top: 145px;
+    right: 1px;
+  }
+  .promo__title {
+    height: 120px;
+  }
+  .promo__subtitle {
+    width: 55%;
+    height: 100px;
+  }
+  .benefits .container {
+    padding: 20px 20px;
+  }
+  .benefits__item-descr {
+    margin-top: 10px;
+  }
+  .tutorials__title {
+    font-size: 32px;
+    width: 381px;
+  }
+  .tutorials__star {
+    top: -35px;
+    right: -23px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding-top: 20px;
+  }
+  .header__logo {
+    height: 40px;
+  }
+  .header__reg {
+    width: 75px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .btn__menu {
+    width: 75px;
+    font-size: 15px;
+  }
+  .btn_promo {
+    display: block;
+    margin: 0 auto;
+  }
+  .btn_w170 {
+    display: block;
+    margin: 20px auto;
+  }
+  .promo .container {
+    min-height: 550px;
+  }
+  .promo__gradient {
+    width: 80%;
+    left: 10%;
+    height: 70%;
+  }
+  .promo__item {
+    margin: 30px auto 0 auto;
+    width: 90%;
+  }
+  .promo__title {
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+  }
+  .promo__subtitle {
+    margin: 170px auto 41px auto;
+    width: 90%;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .promo__img {
+    top: 102px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .benefits .container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 430px;
+    width: 95%;
+    padding: 20px 30px;
+  }
+  .benefits__item {
+    width: 110px;
+    height: 130px;
+  }
+  .tutorials {
+    overflow: hidden;
+  }
+  .tutorials__title {
+    font-size: 25px;
+    width: 270px;
+  }
+  .tutorials__star {
+    top: -34px;
+    right: -37px;
+    width: 73px;
+  }
+  .tutorial-card {
+    width: 90%;
+    min-height: 300px;
+    margin-bottom: 30px;
+    padding: 30px 10px 15px 10px;
+  }
+  .tutorial-card__title {
+    font-size: 20px;
+  }
+  .tutorial-card__price {
+    font-size: 15px;
+  }
+  .tutorial-card__text {
+    width: 130px;
+    padding-left: 0px;
+  }
+  .benefits__gradient_left {
+    left: 10px;
+  }
+  .benefits__gradient_right {
+    right: 10px;
+  }
+}
