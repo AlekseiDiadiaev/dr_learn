@@ -567,6 +567,15 @@ body {
     color: #fff;
     background: linear-gradient(104.85deg, #AF612D -27.27%, #FFA56A 117.63%);
   }
+  .btn_w170 {
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .btn_promo {
+    position: relative;
+    z-index: 100;
+  }
   .promo .container {
     display: block;
     position: relative;
@@ -788,7 +797,7 @@ body {
     text-align: center;
   }
   .promo__subtitle {
-    margin: 170px auto 41px auto;
+    margin: 170px auto 0px auto;
     width: 90%;
     font-size: 15px;
     line-height: 22px;

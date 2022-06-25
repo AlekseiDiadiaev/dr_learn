@@ -2,8 +2,9 @@
 window.addEventListener('DOMContentLoaded', () =>{
     const menuBtn = document.querySelector('.btn__menu'),
           closeBtn = document.querySelector('.header__nav-mobile-close'), 
-         mobileMenu = document.querySelector('.header__nav-mobile');
-    console.log(closeBtn);
+         mobileMenu = document.querySelector('.header__nav-mobile'),
+         promoBtn = document.querySelector('.btn_promo');
+
     menuBtn.addEventListener('click', () => {
         mobileMenu.classList.add('header__nav-mobile_active');
     });
